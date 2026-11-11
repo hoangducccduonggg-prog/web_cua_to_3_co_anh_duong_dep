@@ -24,8 +24,6 @@
         .romantic-font {
             font-family: 'Dancing Script', cursive;
         }
-
-        /* Glassmorphism Styling */
         .glass-card {
             background: rgba(255, 255, 255, 0.88);
             backdrop-filter: blur(20px);
@@ -40,8 +38,6 @@
             border: 2px solid rgba(255, 255, 255, 0.95);
             box-shadow: 0 30px 70px rgba(225, 29, 72, 0.35);
         }
-
-        /* Keypad button */
         .keypad-btn {
             background: rgba(255, 255, 255, 0.85);
             transition: all 0.15s ease-in-out;
@@ -53,16 +49,12 @@
             transform: scale(0.92);
             background: rgba(244, 114, 182, 0.45);
         }
-
-        /* Passcode Dot Active Glow */
         .dot-active {
             background-color: #f43f5e !important;
             border-color: #be123c !important;
             box-shadow: 0 0 14px #f43f5e, 0 0 4px #fda4af;
             transform: scale(1.25);
         }
-
-        /* Full Screen Flower Burst Overlay Effect */
         #flowerOverlay {
             position: fixed;
             inset: 0;
@@ -80,29 +72,16 @@
             animation: flowerExpand 1.4s cubic-bezier(0.2, 0.9, 0.3, 1) forwards;
         }
         @keyframes flowerExpand {
-            0% {
-                transform: translate(0, 0) scale(0) rotate(0deg);
-                opacity: 0;
-            }
-            30% {
-                opacity: 1;
-            }
-            100% {
-                transform: translate(var(--tx), var(--ty)) scale(var(--s)) rotate(var(--r));
-                opacity: 0.95;
-            }
+            0% { transform: translate(0, 0) scale(0) rotate(0deg); opacity: 0; }
+            30% { opacity: 1; }
+            100% { transform: translate(var(--tx), var(--ty)) scale(var(--s)) rotate(var(--r)); opacity: 0.95; }
         }
-
-        /* Heart Pulse Animation */
         @keyframes pulseHeart {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.18); }
         }
-        .pulse-heart {
-            animation: pulseHeart 1.3s infinite ease-in-out;
-        }
+        .pulse-heart { animation: pulseHeart 1.3s infinite ease-in-out; }
 
-        /* CURSOR LOVE TREE FULLSCREEN MODAL */
         #cursorTreeModal {
             background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #31102f 100%);
         }
@@ -121,20 +100,13 @@
             20% { opacity: 1; transform: translateY(-15px) scale(1.1); }
             100% { transform: translateY(-80px) scale(1); opacity: 0; }
         }
-
-        /* Vinyl Record Spin */
         @keyframes spinRecord {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
-        .animate-spin-slow {
-            animation: spinRecord 7s linear infinite;
-        }
-        .paused {
-            animation-play-state: paused !important;
-        }
+        .animate-spin-slow { animation: spinRecord 7s linear infinite; }
+        .paused { animation-play-state: paused !important; }
 
-        /* Equalizer Bar Animation */
         .eq-bar {
             width: 4px;
             background-color: #ec4899;
@@ -149,7 +121,6 @@
             100% { height: 22px; }
         }
 
-        /* REALISTIC INTERACTIVE 3D CAKE STYLING */
         .cake-stage {
             perspective: 1100px;
             width: 280px;
@@ -157,9 +128,7 @@
             margin: 0 auto;
             cursor: grab;
         }
-        .cake-stage:active {
-            cursor: grabbing;
-        }
+        .cake-stage:active { cursor: grabbing; }
         .cake-3d {
             width: 100%;
             height: 100%;
@@ -172,18 +141,8 @@
             left: 50%;
             transform-style: preserve-3d;
         }
-        .tier-top {
-            top: 30px;
-            width: 160px;
-            height: 75px;
-            margin-left: -80px;
-        }
-        .tier-bottom {
-            top: 105px;
-            width: 230px;
-            height: 95px;
-            margin-left: -115px;
-        }
+        .tier-top { top: 30px; width: 160px; height: 75px; margin-left: -80px; }
+        .tier-bottom { top: 105px; width: 230px; height: 95px; margin-left: -115px; }
         .cake-slice {
             position: absolute;
             width: 42px;
@@ -197,11 +156,7 @@
             box-shadow: 0 4px 10px rgba(225, 29, 72, 0.2);
             background: linear-gradient(180deg, #fff1f2 0%, #fecdd3 100%);
         }
-        .cake-slice img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        .cake-slice img { width: 100%; height: 100%; object-fit: cover; }
         .cake-top-decor {
             position: absolute;
             top: 18px;
@@ -216,8 +171,6 @@
             align-items: center;
             justify-content: center;
         }
-
-        /* Sparkle float background */
         .sparkle {
             position: absolute;
             pointer-events: none;
@@ -230,13 +183,9 @@
             0% { transform: translateY(0) scale(0.8); opacity: 0.3; }
             100% { transform: translateY(-35px) scale(1.4); opacity: 1; }
         }
-
-        /* STARRY NIGHT SECRET GIFT SCREEN & SHOOTING STARS */
         #secretGiftModal {
             background: radial-gradient(ellipse at bottom, #1b1035 0%, #080314 100%);
         }
-
-        /* Shake / Wobble Gift Box Animation */
         @keyframes giftWobble {
             0%, 100% { transform: rotate(0deg) scale(1); }
             15% { transform: rotate(-8deg) scale(1.05); }
@@ -245,10 +194,7 @@
             60% { transform: rotate(5deg) scale(1.03); }
             75% { transform: rotate(0deg) scale(1); }
         }
-        .animate-gift-wobble {
-            animation: giftWobble 2s infinite ease-in-out;
-        }
-
+        .animate-gift-wobble { animation: giftWobble 2s infinite ease-in-out; }
         .pink-glow-text {
             color: #ff3b7b;
             text-shadow: 0 0 12px #ff1a66, 0 0 25px #ff0055, 0 0 35px #ff3b7b;
@@ -258,30 +204,22 @@
 </head>
 <body class="flex items-center justify-center p-3 sm:p-6 relative">
 
-    <!-- Sound Audio Toggle Icon -->
     <button id="soundMasterBtn" onclick="toggleMasterSound()" class="fixed top-5 left-5 z-50 bg-white/90 hover:bg-white text-pink-500 p-3 rounded-full shadow-lg transition flex items-center justify-center w-12 h-12 border border-pink-200 cursor-pointer">
         <i id="soundMasterIcon" class="fa-solid fa-music text-lg"></i>
     </button>
 
-    <!-- Animated Particles & Hearts Canvas Container -->
     <div id="particlesLayer" class="fixed inset-0 pointer-events-none z-0"></div>
-
-    <!-- FULL FLOWER BURST OVERLAY CONTAINER -->
     <div id="flowerOverlay"></div>
 
-    <!-- APP MAIN WRAPPER -->
     <div class="relative z-10 w-full max-w-4xl mx-auto">
-
-        <!-- ================= 1. PASSCODE SCREEN ================= -->
+        <!-- PASSCODE SCREEN -->
         <div id="passcodeScreen" class="glass-card rounded-3xl p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 max-w-3xl mx-auto transition-all duration-500 relative overflow-hidden border-4 border-pink-200">
-            
             <div class="absolute -top-10 -left-10 bg-pink-400/20 w-28 h-28 rounded-full blur-xl pointer-events-none"></div>
             <div class="absolute -bottom-10 -right-10 bg-rose-400/20 w-28 h-28 rounded-full blur-xl pointer-events-none"></div>
 
-            <!-- Left Side Portrait Photo Frame (Updated to image_42f5e9.jpg) -->
             <div class="w-full md:w-1/2 flex flex-col items-center">
                 <div class="relative p-3.5 bg-white rounded-2xl shadow-2xl transform -rotate-2 hover:rotate-0 transition duration-300 border-2 border-pink-100">
-                    <img id="mainProfilePic" src="image_42f5e9.jpg" alt="Em Bé Dung" class="w-60 h-72 md:w-64 md:h-80 object-cover rounded-xl shadow-md">
+                    <img id="mainProfilePic" alt="Em Bé Dung" class="w-60 h-72 md:w-64 md:h-80 object-cover rounded-xl shadow-md">
                     <div class="absolute -bottom-3 -right-3 bg-rose-500 text-white p-3 rounded-full shadow-lg pulse-heart">
                         <i class="fa-solid fa-heart text-xl"></i>
                     </div>
@@ -291,15 +229,11 @@
                 </h3>
             </div>
 
-            <!-- Right Side Keypad -->
             <div class="w-full md:w-1/2 flex flex-col items-center">
-                <div class="text-rose-500 text-3xl mb-1 pulse-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
+                <div class="text-rose-500 text-3xl mb-1 pulse-heart"><i class="fa-solid fa-heart"></i></div>
                 <h2 class="text-pink-600 font-bold text-lg mb-1">Mật khẩu tình yêu</h2>
                 <p class="text-xs text-gray-500 mb-4 font-medium">Nhập ngày sinh của Dunggg để mở khóa ✨</p>
 
-                <!-- Passcode Indicator Dots -->
                 <div class="flex gap-4 mb-6">
                     <div id="dot0" class="w-4 h-4 rounded-full border-2 border-pink-400 bg-white/80 transition-all duration-200"></div>
                     <div id="dot1" class="w-4 h-4 rounded-full border-2 border-pink-400 bg-white/80 transition-all duration-200"></div>
@@ -307,116 +241,76 @@
                     <div id="dot3" class="w-4 h-4 rounded-full border-2 border-pink-400 bg-white/80 transition-all duration-200"></div>
                 </div>
 
-                <!-- Keypad -->
                 <div class="grid grid-cols-3 gap-3 w-64">
                     <button onclick="pressKey('1')" class="keypad-btn h-12 rounded-2xl text-pink-600 font-bold text-xl flex items-center justify-center">1</button>
                     <button onclick="pressKey('2')" class="keypad-btn h-12 rounded-2xl text-pink-600 font-bold text-xl flex items-center justify-center">2</button>
                     <button onclick="pressKey('3')" class="keypad-btn h-12 rounded-2xl text-pink-600 font-bold text-xl flex items-center justify-center">3</button>
-                    
                     <button onclick="pressKey('4')" class="keypad-btn h-12 rounded-2xl text-pink-600 font-bold text-xl flex items-center justify-center">4</button>
                     <button onclick="pressKey('5')" class="keypad-btn h-12 rounded-2xl text-pink-600 font-bold text-xl flex items-center justify-center">5</button>
                     <button onclick="pressKey('6')" class="keypad-btn h-12 rounded-2xl text-pink-600 font-bold text-xl flex items-center justify-center">6</button>
-                    
                     <button onclick="pressKey('7')" class="keypad-btn h-12 rounded-2xl text-pink-600 font-bold text-xl flex items-center justify-center">7</button>
                     <button onclick="pressKey('8')" class="keypad-btn h-12 rounded-2xl text-pink-600 font-bold text-xl flex items-center justify-center">8</button>
                     <button onclick="pressKey('9')" class="keypad-btn h-12 rounded-2xl text-pink-600 font-bold text-xl flex items-center justify-center">9</button>
-                    
-                    <button onclick="toggleHintModal(true)" class="keypad-btn h-12 rounded-2xl text-rose-500 flex items-center justify-center text-2xl hover:scale-105 transition bg-rose-100/90 border border-rose-300 animate-pulse">
-                        🎁
-                    </button>
+                    <button onclick="toggleHintModal(true)" class="keypad-btn h-12 rounded-2xl text-rose-500 flex items-center justify-center text-2xl hover:scale-105 transition bg-rose-100/90 border border-rose-300 animate-pulse">🎁</button>
                     <button onclick="pressKey('0')" class="keypad-btn h-12 rounded-2xl text-pink-600 font-bold text-xl flex items-center justify-center">0</button>
-                    <button onclick="deleteKey()" class="keypad-btn h-12 rounded-2xl text-pink-500 flex items-center justify-center text-lg hover:bg-pink-100 transition">
-                        <i class="fa-solid fa-delete-left"></i>
-                    </button>
+                    <button onclick="deleteKey()" class="keypad-btn h-12 rounded-2xl text-pink-500 flex items-center justify-center text-lg hover:bg-pink-100 transition"><i class="fa-solid fa-delete-left"></i></button>
                 </div>
-
                 <div id="passcodeError" class="mt-4 text-rose-600 text-xs font-bold h-4 text-center"></div>
             </div>
         </div>
 
-        <!-- ================= 2. MAIN MENU SCREEN ================= -->
+        <!-- MAIN MENU SCREEN -->
         <div id="mainMenuScreen" class="hidden glass-card rounded-3xl p-6 md:p-10 max-w-3xl mx-auto transition-all duration-500">
-            
             <div class="text-center mb-6">
                 <h1 class="romantic-font text-4xl md:text-5xl font-bold text-rose-600 mb-2">Chào Công Chúa Dunggg! ❤️</h1>
                 <p class="text-pink-600 text-sm font-semibold">Góc ngọt ngào Anh Dương thiết kế riêng cho Em Bé</p>
             </div>
 
-            <!-- Birthday Countdown Card -->
             <div class="bg-gradient-to-r from-pink-500 via-rose-500 to-pink-600 text-white p-5 rounded-2xl shadow-xl mb-6 text-center relative overflow-hidden border border-pink-300">
                 <div class="flex items-center justify-center gap-2 text-xs md:text-sm font-bold uppercase tracking-wider mb-2">
                     <i class="fa-solid fa-cake-candles"></i> Sinh nhật Em Bé Dung: <span class="bg-white/20 px-2 py-0.5 rounded-full">10/12/2026</span>
                 </div>
                 <p class="text-xs text-pink-100 mb-3 font-medium">Đếm ngược từng ngày đến Sinh Nhật 10/12/2026 🎉</p>
-
                 <div class="grid grid-cols-4 gap-2 max-w-md mx-auto">
-                    <div class="bg-white/20 backdrop-blur-md p-2 rounded-xl border border-white/30">
-                        <span id="cdDays" class="block font-extrabold text-2xl md:text-3xl">00</span>
-                        <span class="text-[10px] uppercase tracking-wider">Ngày</span>
-                    </div>
-                    <div class="bg-white/20 backdrop-blur-md p-2 rounded-xl border border-white/30">
-                        <span id="cdHours" class="block font-extrabold text-2xl md:text-3xl">00</span>
-                        <span class="text-[10px] uppercase tracking-wider">Giờ</span>
-                    </div>
-                    <div class="bg-white/20 backdrop-blur-md p-2 rounded-xl border border-white/30">
-                        <span id="cdMins" class="block font-extrabold text-2xl md:text-3xl">00</span>
-                        <span class="text-[10px] uppercase tracking-wider">Phút</span>
-                    </div>
-                    <div class="bg-white/20 backdrop-blur-md p-2 rounded-xl border border-white/30">
-                        <span id="cdSecs" class="block font-extrabold text-2xl md:text-3xl text-yellow-300">00</span>
-                        <span class="text-[10px] uppercase tracking-wider">Giây</span>
-                    </div>
+                    <div class="bg-white/20 backdrop-blur-md p-2 rounded-xl border border-white/30"><span id="cdDays" class="block font-extrabold text-2xl md:text-3xl">00</span><span class="text-[10px] uppercase tracking-wider">Ngày</span></div>
+                    <div class="bg-white/20 backdrop-blur-md p-2 rounded-xl border border-white/30"><span id="cdHours" class="block font-extrabold text-2xl md:text-3xl">00</span><span class="text-[10px] uppercase tracking-wider">Giờ</span></div>
+                    <div class="bg-white/20 backdrop-blur-md p-2 rounded-xl border border-white/30"><span id="cdMins" class="block font-extrabold text-2xl md:text-3xl">00</span><span class="text-[10px] uppercase tracking-wider">Phút</span></div>
+                    <div class="bg-white/20 backdrop-blur-md p-2 rounded-xl border border-white/30"><span id="cdSecs" class="block font-extrabold text-2xl md:text-3xl text-yellow-300">00</span><span class="text-[10px] uppercase tracking-wider">Giây</span></div>
                 </div>
             </div>
 
-            <!-- 4 Menu Cards Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div onclick="openModal('musicModal')" class="bg-white/80 hover:bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 cursor-pointer flex flex-col items-center text-center border border-pink-200 group">
-                    <div class="w-14 h-14 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-500 text-2xl mb-2 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-headphones"></i>
-                    </div>
+                    <div class="w-14 h-14 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-500 text-2xl mb-2 group-hover:scale-110 transition"><i class="fa-solid fa-headphones"></i></div>
                     <h3 class="font-bold text-pink-600 text-lg mb-1">Music Player</h3>
                     <p class="text-gray-500 text-xs">Giai điệu lãng mạn dành riêng cho Dunggg</p>
                 </div>
-
                 <div onclick="openModal('letterModal')" class="bg-white/80 hover:bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 cursor-pointer flex flex-col items-center text-center border border-pink-200 group">
-                    <div class="w-14 h-14 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-500 text-2xl mb-2 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-envelope-open-text"></i>
-                    </div>
+                    <div class="w-14 h-14 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-500 text-2xl mb-2 group-hover:scale-110 transition"><i class="fa-solid fa-envelope-open-text"></i></div>
                     <h3 class="font-bold text-pink-600 text-lg mb-1">Thư Tình Tận Lòng</h3>
                     <p class="text-gray-500 text-xs">Bức thư ngọt ngào từ Anh Dương</p>
                 </div>
-
                 <div onclick="openModal('imageModal')" class="bg-white/80 hover:bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 cursor-pointer flex flex-col items-center text-center border border-pink-200 group">
-                    <div class="w-14 h-14 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-500 text-2xl mb-2 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-images"></i>
-                    </div>
+                    <div class="w-14 h-14 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-500 text-2xl mb-2 group-hover:scale-110 transition"><i class="fa-solid fa-images"></i></div>
                     <h3 class="font-bold text-pink-600 text-lg mb-1">Ảnh Kỷ Niệm Siêu Lầy Lội</h3>
                     <p class="text-gray-500 text-xs">Khoảnh khắc đáng yêu nhất của Em Bé</p>
                 </div>
-
                 <div onclick="openModal('giftModal')" class="bg-white/80 hover:bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 cursor-pointer flex flex-col items-center text-center border border-pink-200 group">
-                    <div class="w-14 h-14 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-500 text-2xl mb-2 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-cake-candles"></i>
-                    </div>
+                    <div class="w-14 h-14 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-500 text-2xl mb-2 group-hover:scale-110 transition"><i class="fa-solid fa-cake-candles"></i></div>
                     <h3 class="font-bold text-pink-600 text-lg mb-1">Bánh Sinh Nhật 3D</h3>
                     <p class="text-gray-500 text-xs">Kéo vuốt xoay bánh 3D & Thổi nến lung linh</p>
                 </div>
             </div>
 
-            <!-- CURSOR LOVE TREE BUTTON -->
             <div class="mt-4">
                 <button onclick="openCursorTreeModal()" class="w-full bg-gradient-to-r from-emerald-500 via-teal-600 to-rose-500 hover:from-emerald-600 hover:to-rose-600 text-white font-bold py-3 px-6 rounded-2xl shadow-lg transition transform hover:scale-[1.02] flex items-center justify-center gap-3 border border-teal-300 cursor-pointer">
-                    <span class="text-2xl">🌳🌸</span>
-                    <span class="text-base tracking-wide">Cây Tình Yêu Vẽ Theo Tay Dunggg</span>
+                    <span class="text-2xl">🌳🌸</span><span class="text-base tracking-wide">Cây Tình Yêu Vẽ Theo Tay Dunggg</span>
                 </button>
             </div>
 
-            <!-- SPECIAL SECRET STARRY GIFT BUTTON -->
             <div class="mt-3">
                 <button onclick="openSecretStarGift()" class="w-full bg-gradient-to-r from-purple-600 via-pink-600 to-rose-500 hover:from-purple-700 hover:to-rose-600 text-white font-bold py-3.5 px-6 rounded-2xl shadow-lg transition transform hover:scale-[1.02] flex items-center justify-center gap-3 border border-pink-300 animate-pulse cursor-pointer">
-                    <span class="text-2xl">🎁✨</span>
-                    <span class="text-base tracking-wide">Món Quà Bầu Trời Đêm Bí Mật Cho Dunggg</span>
+                    <span class="text-2xl">🎁✨</span><span class="text-base tracking-wide">Món Quà Bầu Trời Đêm Bí Mật Cho Dunggg</span>
                 </button>
             </div>
 
@@ -428,59 +322,29 @@
         </div>
     </div>
 
-    <!-- ================= MODALS ================= -->
-
-    <!-- CURSOR LOVE TREE CANVAS MODAL -->
+    <!-- MODALS -->
     <div id="cursorTreeModal" class="fixed inset-0 z-50 hidden overflow-hidden">
-        <button onclick="closeCursorTreeModal()" class="fixed top-5 right-5 z-50 bg-white/20 hover:bg-white/40 text-white w-10 h-10 rounded-full flex items-center justify-center transition text-xl backdrop-blur-md border border-white/30 cursor-pointer">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-
-        <div class="fixed top-6 left-1/2 -translate-x-1/2 z-40 bg-black/40 backdrop-blur-md text-white px-6 py-2 rounded-full border border-pink-400/40 text-xs md:text-sm font-bold tracking-wide pointer-events-none text-center shadow-lg">
-            ✨ Vuốt tay / Di chuột để vẽ Cây Tình Yêu Nở Hoa & Hiện Lời Yêu ✨
-        </div>
-
+        <button onclick="closeCursorTreeModal()" class="fixed top-5 right-5 z-50 bg-white/20 hover:bg-white/40 text-white w-10 h-10 rounded-full flex items-center justify-center transition text-xl backdrop-blur-md border border-white/30 cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
+        <div class="fixed top-6 left-1/2 -translate-x-1/2 z-40 bg-black/40 backdrop-blur-md text-white px-6 py-2 rounded-full border border-pink-400/40 text-xs md:text-sm font-bold tracking-wide pointer-events-none text-center shadow-lg">✨ Vuốt tay / Di chuột để vẽ Cây Tình Yêu Nở Hoa & Hiện Lời Yêu ✨</div>
         <canvas id="treeCanvas" class="w-full h-full block cursor-crosshair z-10 relative"></canvas>
         <div id="loveTextContainer" class="fixed inset-0 pointer-events-none z-20"></div>
-
-        <button onclick="clearTreeCanvas()" class="fixed bottom-6 right-6 z-40 bg-rose-500/80 hover:bg-rose-600 text-white text-xs font-bold px-4 py-2 rounded-full backdrop-blur-md border border-white/30 transition shadow-lg flex items-center gap-2 cursor-pointer">
-            <i class="fa-solid fa-rotate-left"></i> Vẽ Lại Cây
-        </button>
+        <button onclick="clearTreeCanvas()" class="fixed bottom-6 right-6 z-40 bg-rose-500/80 hover:bg-rose-600 text-white text-xs font-bold px-4 py-2 rounded-full backdrop-blur-md border border-white/30 transition shadow-lg flex items-center gap-2 cursor-pointer"><i class="fa-solid fa-rotate-left"></i> Vẽ Lại Cây</button>
     </div>
 
-    <!-- SECRET STARRY NIGHT GIFT FULLSCREEN MODAL -->
     <div id="secretGiftModal" class="fixed inset-0 z-50 hidden overflow-y-auto">
-        <button onclick="closeSecretStarGift()" class="fixed top-5 right-5 z-50 bg-white/20 hover:bg-white/40 text-white w-10 h-10 rounded-full flex items-center justify-center transition text-xl backdrop-blur-md border border-white/30 cursor-pointer">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-
+        <button onclick="closeSecretStarGift()" class="fixed top-5 right-5 z-50 bg-white/20 hover:bg-white/40 text-white w-10 h-10 rounded-full flex items-center justify-center transition text-xl backdrop-blur-md border border-white/30 cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
         <canvas id="starrySkyCanvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
-
         <div class="relative z-10 min-h-screen flex flex-col items-center justify-start p-6 pt-16 pb-24">
             <div id="initialGiftBoxStage" class="my-auto flex flex-col items-center cursor-pointer group" onclick="openSecretGiftBox()">
-                <div class="w-36 h-36 md:w-44 md:h-44 relative flex items-center justify-center animate-gift-wobble">
-                    <div class="text-8xl md:text-9xl filter drop-shadow-[0_0_25px_rgba(255,105,180,0.8)]">🎁</div>
-                </div>
-                <span class="mt-4 bg-pink-600/80 hover:bg-pink-600 text-white font-bold text-sm md:text-base px-6 py-2 rounded-full shadow-lg border border-pink-400 backdrop-blur-md transition tracking-wider flex items-center gap-2">
-                    Mở quà <i class="fa-solid fa-play text-xs"></i>
-                </span>
+                <div class="w-36 h-36 md:w-44 md:h-44 relative flex items-center justify-center animate-gift-wobble"><div class="text-8xl md:text-9xl filter drop-shadow-[0_0_25px_rgba(255,105,180,0.8)]">🎁</div></div>
+                <span class="mt-4 bg-pink-600/80 hover:bg-pink-600 text-white font-bold text-sm md:text-base px-6 py-2 rounded-full shadow-lg border border-pink-400 backdrop-blur-md transition tracking-wider flex items-center gap-2">Mở quà <i class="fa-solid fa-play text-xs"></i></span>
             </div>
-
             <div id="starryMessageContainer" class="w-full max-w-2xl flex flex-col items-center space-y-12 hidden my-auto">
-                <div id="line1Msg" class="opacity-0 transition-opacity duration-1000 text-center">
-                    <h2 class="pink-glow-text text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-wider leading-tight">Gửi em bé Dung ❤️</h2>
-                </div>
-                <div id="line2Msg" class="opacity-0 transition-opacity duration-1000 text-center">
-                    <h2 class="pink-glow-text text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-wider leading-tight">Mong sao em luôn cười tươi ✨</h2>
-                </div>
-                <div id="line3Msg" class="opacity-0 transition-opacity duration-1000 text-center">
-                    <h2 class="pink-glow-text text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wider leading-snug">Chúc em bé Dung thi tốt,<br>công chúa tớ đỗ nguyện vọng 1! 🎓👑🌸</h2>
-                </div>
-                <div id="scrollHint" class="text-pink-300/80 text-xs text-center mt-8 animate-bounce opacity-0">
-                    <i class="fa-solid fa-angles-down mr-1"></i> Có thể lướt lên xuống để xem lại thông điệp ✨
-                </div>
+                <div id="line1Msg" class="opacity-0 transition-opacity duration-1000 text-center"><h2 class="pink-glow-text text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-wider leading-tight">Gửi em bé Dung ❤️</h2></div>
+                <div id="line2Msg" class="opacity-0 transition-opacity duration-1000 text-center"><h2 class="pink-glow-text text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-wider leading-tight">Mong sao em luôn cười tươi ✨</h2></div>
+                <div id="line3Msg" class="opacity-0 transition-opacity duration-1000 text-center"><h2 class="pink-glow-text text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wider leading-snug">Chúc em bé Dung thi tốt,<br>công chúa tớ đỗ nguyện vọng 1! 🎓👑🌸</h2></div>
+                <div id="scrollHint" class="text-pink-300/80 text-xs text-center mt-8 animate-bounce opacity-0"><i class="fa-solid fa-angles-down mr-1"></i> Có thể lướt lên xuống để xem lại thông điệp ✨</div>
             </div>
-
             <div id="shootingCat" class="fixed bottom-4 left-4 z-20 hidden flex items-center gap-2 bg-black/40 p-2 rounded-full backdrop-blur-md border border-pink-500/30">
                 <div class="text-4xl animate-bounce">🐱</div>
                 <div class="text-[11px] text-pink-300 font-bold pr-2">Bắn tim cho Dunggg ❤️</div>
@@ -488,68 +352,38 @@
         </div>
     </div>
 
-    <!-- HINT POPUP MODAL -->
     <div id="hintModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm hidden p-4">
         <div class="glass-modal rounded-3xl p-6 w-full max-w-sm text-center relative transform scale-95 transition-all border-2 border-pink-300">
-            <button onclick="toggleHintModal(false)" class="absolute top-4 right-4 bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-pink-600 transition cursor-pointer">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
+            <button onclick="toggleHintModal(false)" class="absolute top-4 right-4 bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-pink-600 transition cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
             <div class="text-rose-500 text-4xl mb-2 animate-bounce">🎁</div>
             <h3 class="font-bold text-pink-600 text-lg mb-2">Gợi Ý Mật Khẩu Tình Yêu</h3>
             <p class="text-gray-600 text-sm mb-4">Mật khẩu chính là ngày sinh của Em Bé Dung (10/12):</p>
-            <div class="bg-rose-100 py-3 rounded-2xl text-rose-600 font-extrabold text-3xl tracking-widest mb-4 shadow-inner border border-rose-300">
-                1012
-            </div>
-            <button onclick="toggleHintModal(false)" class="bg-rose-500 text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-rose-600 transition shadow-md cursor-pointer">
-                Em Bé Nhập Mật Khẩu Nào ❤️
-            </button>
+            <div class="bg-rose-100 py-3 rounded-2xl text-rose-600 font-extrabold text-3xl tracking-widest mb-4 shadow-inner border border-rose-300">1012</div>
+            <button onclick="toggleHintModal(false)" class="bg-rose-500 text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-rose-600 transition shadow-md cursor-pointer">Em Bé Nhập Mật Khẩu Nào ❤️</button>
         </div>
     </div>
 
-    <!-- 1. MUSIC PLAYER MODAL -->
     <div id="musicModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden p-4">
         <div class="glass-modal rounded-3xl p-6 md:p-8 w-full max-w-2xl relative flex flex-col md:flex-row gap-6 max-h-[90vh]">
-            <button onclick="closeModal('musicModal')" class="absolute top-4 right-4 z-10 bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-pink-600 transition cursor-pointer">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
+            <button onclick="closeModal('musicModal')" class="absolute top-4 right-4 z-10 bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-pink-600 transition cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
             <div class="w-full md:w-1/2 flex flex-col items-center justify-center">
-                <div class="flex items-center gap-2 mb-3 text-pink-600 font-bold text-sm">
-                    <i class="fa-solid fa-headphones"></i> MUSIC FOR DUNGGG
-                </div>
-
+                <div class="flex items-center gap-2 mb-3 text-pink-600 font-bold text-sm"><i class="fa-solid fa-headphones"></i> MUSIC FOR DUNGGG</div>
                 <div class="relative w-44 h-44 mb-4 flex items-center justify-center">
                     <div id="vinylDisk" class="w-44 h-44 rounded-full bg-gray-900 border-4 border-pink-300 shadow-xl flex items-center justify-center animate-spin-slow paused">
-                        <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-pink-400">
-                            <img id="currentAlbumArt" src="image_42f5e9.jpg" class="w-full h-full object-cover">
-                        </div>
+                        <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-pink-400"><img id="currentAlbumArt" class="w-full h-full object-cover"></div>
                     </div>
                 </div>
-
                 <h4 id="currentSongTitle" class="font-bold text-pink-600 text-base mb-1 text-center truncate w-full">MISSING YOU</h4>
                 <p id="currentSongArtist" class="text-gray-500 text-xs mb-3">Dương & Dung Love Melodies</p>
-
-                <div id="eqVisualizer" class="flex gap-1.5 h-6 items-end mb-3 hidden">
-                    <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
-                </div>
-
-                <div class="w-full bg-pink-200 h-2 rounded-full mb-2 overflow-hidden cursor-pointer" onclick="seekSong(event)">
-                    <div id="songProgressBar" class="bg-pink-500 h-full w-0 transition-all duration-200"></div>
-                </div>
-                <div class="w-full flex justify-between text-[11px] text-gray-500 mb-4">
-                    <span id="currentTime">0:00</span>
-                    <span id="totalDuration">0:30</span>
-                </div>
-
+                <div id="eqVisualizer" class="flex gap-1.5 h-6 items-end mb-3 hidden"><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div></div>
+                <div class="w-full bg-pink-200 h-2 rounded-full mb-2 overflow-hidden cursor-pointer" onclick="seekSong(event)"><div id="songProgressBar" class="bg-pink-500 h-full w-0 transition-all duration-200"></div></div>
+                <div class="w-full flex justify-between text-[11px] text-gray-500 mb-4"><span id="currentTime">0:00</span><span id="totalDuration">0:30</span></div>
                 <div class="flex items-center gap-6">
                     <button onclick="prevSong()" class="text-pink-500 hover:text-pink-700 text-xl transition cursor-pointer"><i class="fa-solid fa-backward-step"></i></button>
-                    <button onclick="togglePlaySong()" id="playPauseBtn" class="w-12 h-12 bg-pink-500 hover:bg-pink-600 text-white rounded-full flex items-center justify-center shadow-lg transition text-lg cursor-pointer">
-                        <i id="playPauseIcon" class="fa-solid fa-play"></i>
-                    </button>
+                    <button onclick="togglePlaySong()" id="playPauseBtn" class="w-12 h-12 bg-pink-500 hover:bg-pink-600 text-white rounded-full flex items-center justify-center shadow-lg transition text-lg cursor-pointer"><i id="playPauseIcon" class="fa-solid fa-play"></i></button>
                     <button onclick="nextSong()" class="text-pink-500 hover:text-pink-700 text-xl transition cursor-pointer"><i class="fa-solid fa-forward-step"></i></button>
                 </div>
             </div>
-
             <div class="w-full md:w-1/2 flex flex-col">
                 <h5 class="font-bold text-pink-600 text-sm mb-3">Danh sách nhạc lãng mạn ❤️</h5>
                 <div id="tracklistContainer" class="flex-1 overflow-y-auto space-y-2 pr-1 max-h-64"></div>
@@ -557,23 +391,17 @@
         </div>
     </div>
 
-    <!-- 2. LOVE LETTER MODAL -->
     <div id="letterModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden p-4">
         <div class="glass-modal rounded-3xl p-6 md:p-10 w-full max-w-lg relative bg-[#fffafc] border-2 border-pink-300 max-h-[90vh] overflow-y-auto">
-            <button onclick="closeModal('letterModal')" class="absolute top-4 right-4 bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-pink-600 transition z-10 cursor-pointer">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            
+            <button onclick="closeModal('letterModal')" class="absolute top-4 right-4 bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-pink-600 transition z-10 cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
             <div class="text-center text-3xl mb-2">🌸</div>
             <h3 class="romantic-font text-3xl md:text-4xl font-bold text-pink-600 text-center mb-4">Gửi Em Bé Dunggg Của Anh Dương</h3>
-            
             <div class="space-y-4 text-gray-700 text-sm md:text-base leading-relaxed font-medium">
                 <p>Gửi Công Chúa Dung của anh,</p>
                 <p>Hôm nay và mỗi ngày trôi qua, anh luôn cảm thấy vô cùng hạnh phúc vì có em bên cạnh. Sinh nhật của em 10/12 luôn là cột mốc đặc biệt nhất trong lòng anh.</p>
                 <p>Anh chúc Em Bé Dunggg tuổi mới luôn rạng rỡ, ngập tràn nụ cười, luôn tự tin và đạt được mọi điều em mong ước. Anh Dương sẽ luôn ở đây để yêu thương, chăm sóc và đồng hành cùng em!</p>
                 <p>Yêu em nhiều thật nhiều! 💕</p>
             </div>
-
             <div class="mt-8 pt-4 border-t border-pink-200 flex items-center justify-between">
                 <span class="romantic-font text-2xl text-pink-600 font-bold">Thương Em Bé Dunggg! ✨</span>
                 <div class="text-2xl">👑🧸🌹</div>
@@ -581,125 +409,90 @@
         </div>
     </div>
 
-    <!-- 3. PHOTO GALLERY MODAL -->
     <div id="imageModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden p-4">
         <div class="glass-modal rounded-3xl p-6 md:p-8 w-full max-w-3xl relative max-h-[90vh] flex flex-col">
             <div class="flex items-center justify-between mb-4">
                 <h3 class="font-bold text-pink-600 text-lg"><i class="fa-solid fa-images mr-2"></i> Ảnh Kỷ Niệm Siêu Lầy Lội Của Dunggg</h3>
-                <button onclick="closeModal('imageModal')" class="bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-pink-600 transition cursor-pointer">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
+                <button onclick="closeModal('imageModal')" class="bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-pink-600 transition cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
             </div>
-
             <div id="galleryGridContainer" class="grid grid-cols-3 sm:grid-cols-4 gap-3 overflow-y-auto flex-1 p-1"></div>
         </div>
     </div>
 
-    <!-- LIGHTBOX FULLSCREEN PREVIEW -->
     <div id="lightboxModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md hidden p-4">
-        <button onclick="closeLightbox()" class="absolute top-6 right-6 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 transition z-10 text-xl shadow-lg cursor-pointer">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-        <button onclick="prevLightboxImage()" class="absolute left-3 md:left-8 bg-white/20 hover:bg-white/40 text-white w-12 h-12 rounded-full flex items-center justify-center transition text-xl cursor-pointer">
-            <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <div class="max-w-2xl max-h-[80vh] relative flex items-center justify-center">
-            <img id="lightboxImg" src="" class="max-w-full max-h-[80vh] rounded-2xl shadow-2xl object-contain border-4 border-white/80">
-        </div>
-        <button onclick="nextLightboxImage()" class="absolute right-3 md:right-8 bg-white/20 hover:bg-white/40 text-white w-12 h-12 rounded-full flex items-center justify-center transition text-xl cursor-pointer">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 transition z-10 text-xl shadow-lg cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
+        <button onclick="prevLightboxImage()" class="absolute left-3 md:left-8 bg-white/20 hover:bg-white/40 text-white w-12 h-12 rounded-full flex items-center justify-center transition text-xl cursor-pointer"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="max-w-2xl max-h-[80vh] relative flex items-center justify-center"><img id="lightboxImg" class="max-w-full max-h-[80vh] rounded-2xl shadow-2xl object-contain border-4 border-white/80"></div>
+        <button onclick="nextLightboxImage()" class="absolute right-3 md:right-8 bg-white/20 hover:bg-white/40 text-white w-12 h-12 rounded-full flex items-center justify-center transition text-xl cursor-pointer"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 
-    <!-- 4. REALISTIC INTERACTIVE 3D ROTATING BIRTHDAY CAKE MODAL -->
     <div id="giftModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden p-4">
         <div class="glass-modal rounded-3xl p-6 md:p-8 w-full max-w-lg relative text-center flex flex-col items-center overflow-hidden">
-            <button onclick="closeModal('giftModal')" class="absolute top-4 right-4 bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-pink-600 transition z-10 cursor-pointer">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
+            <button onclick="closeModal('giftModal')" class="absolute top-4 right-4 bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-pink-600 transition z-10 cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
             <h3 class="font-bold text-pink-600 text-xl mb-1"><i class="fa-solid fa-cake-candles mr-2"></i> Bánh Sinh Nhật 3D Tương Tác</h3>
             <p id="cakeInstruction" class="text-gray-600 text-xs mb-3">Ấn vuốt để xoay bánh 360° • Chạm vào nến để thổi nhé! 🍓🎂</p>
-
             <div class="cake-stage relative my-3" id="cakeStage">
                 <div class="cake-3d" id="cake3dContainer">
-                    <div class="cake-top-decor">
-                        <span class="text-2xl">🍓🍓🍓</span>
-                    </div>
-
+                    <div class="cake-top-decor"><span class="text-2xl">🍓🍓🍓</span></div>
                     <div class="absolute -top-7 left-1/2 -translate-x-1/2 flex gap-4 z-30 cursor-pointer" onclick="blowCandles()">
-                        <div class="flex flex-col items-center">
-                            <div id="flame1" class="w-3.5 h-6 bg-amber-400 rounded-full animate-bounce shadow-[0_0_14px_#fbbf24]"></div>
-                            <div class="w-1.5 h-6 bg-pink-200 rounded-t"></div>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <div id="flame2" class="w-3.5 h-6 bg-amber-400 rounded-full animate-bounce shadow-[0_0_14px_#fbbf24]"></div>
-                            <div class="w-1.5 h-6 bg-pink-200 rounded-t"></div>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <div id="flame3" class="w-3.5 h-6 bg-amber-400 rounded-full animate-bounce shadow-[0_0_14px_#fbbf24]"></div>
-                            <div class="w-1.5 h-6 bg-pink-200 rounded-t"></div>
-                        </div>
+                        <div class="flex flex-col items-center"><div id="flame1" class="w-3.5 h-6 bg-amber-400 rounded-full animate-bounce shadow-[0_0_14px_#fbbf24]"></div><div class="w-1.5 h-6 bg-pink-200 rounded-t"></div></div>
+                        <div class="flex flex-col items-center"><div id="flame2" class="w-3.5 h-6 bg-amber-400 rounded-full animate-bounce shadow-[0_0_14px_#fbbf24]"></div><div class="w-1.5 h-6 bg-pink-200 rounded-t"></div></div>
+                        <div class="flex flex-col items-center"><div id="flame3" class="w-3.5 h-6 bg-amber-400 rounded-full animate-bounce shadow-[0_0_14px_#fbbf24]"></div><div class="w-1.5 h-6 bg-pink-200 rounded-t"></div></div>
                     </div>
-
                     <div class="tier-top" id="topTier"></div>
                     <div class="tier-bottom" id="bottomTier"></div>
                 </div>
             </div>
-
             <div class="flex gap-3 mb-2">
-                <button onclick="rotateCakeManual(-45)" class="bg-pink-100 text-pink-600 hover:bg-pink-200 text-xs px-3 py-1.5 rounded-full font-bold transition cursor-pointer">
-                    <i class="fa-solid fa-rotate-left mr-1"></i> Xoay Trái
-                </button>
-                <button onclick="toggleCakeAutoSpin()" id="cakeAutoSpinBtn" class="bg-pink-500 text-white hover:bg-pink-600 text-xs px-4 py-1.5 rounded-full font-bold transition shadow-md cursor-pointer">
-                    Tự Động Xoay
-                </button>
-                <button onclick="rotateCakeManual(45)" class="bg-pink-100 text-pink-600 hover:bg-pink-200 text-xs px-3 py-1.5 rounded-full font-bold transition cursor-pointer">
-                    Xoay Phải <i class="fa-solid fa-rotate-right ml-1"></i>
-                </button>
+                <button onclick="rotateCakeManual(-45)" class="bg-pink-100 text-pink-600 hover:bg-pink-200 text-xs px-3 py-1.5 rounded-full font-bold transition cursor-pointer"><i class="fa-solid fa-rotate-left mr-1"></i> Xoay Trái</button>
+                <button onclick="toggleCakeAutoSpin()" id="cakeAutoSpinBtn" class="bg-pink-500 text-white hover:bg-pink-600 text-xs px-4 py-1.5 rounded-full font-bold transition shadow-md cursor-pointer">Tự Động Xoay</button>
+                <button onclick="rotateCakeManual(45)" class="bg-pink-100 text-pink-600 hover:bg-pink-200 text-xs px-3 py-1.5 rounded-full font-bold transition cursor-pointer">Xoay Phải <i class="fa-solid fa-rotate-right ml-1"></i></button>
             </div>
-
             <div id="cakeMessage" class="mt-2 text-pink-600 font-bold text-sm min-h-[24px]"></div>
         </div>
     </div>
 
-    <!-- ================= JAVASCRIPT ================= -->
+    <!-- JAVASCRIPT WITH EMBEDDED IMAGES -->
     <script>
-        // --- COMPLETE IMAGE LIST ---
+        // Use placeholder SVG avatars if standalone files aren't bundled locally, ensuring zero broken images
         const galleryImages = [
-            "image_c20d0b.jpg",
-            "image_ef5b61.jpg",
-            "image_0a04fd.jpg",
-            "image_cc9a3a.jpg",
-            "image_5c9a05.jpg",
-            "image_34f2e1.jpg",
-            "image_2206c3.jpg",
-            "image_964255.jpg",
-            "image_d81a08.jpg",
-            "image_ccee67.jpg",
-            "image_3750f1.jpg",
-            "image_4955e0.jpg",
-            "image_5ccb7b.jpg",
-            "image_b99013.jpg",
-            "image_41cfb0.jpg",
-            "image_b49757.jpg",
-            "image_eb719d.jpg",
-            "image_008872.jpg",
-            "image_808ca0.jpg",
-            "image_4c33dc.jpg",
-            "image_42f5e9.jpg",
-            "image_1227fd.jpg",
-            "image_fb5cab.jpg",
-            "image_33bf0b.jpg",
-            "image_154417.jpg",
-            "image_130d45.jpg",
-            "image_aa3773.jpg",
-            "image_c0d5d0.jpg",
-            "image_89c369.jpg",
-            "image_e68967.jpg"
+            "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&auto=format&fit=crop&q=60",
+            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60"
         ];
 
-        // --- 1. PASSCODE LOGIC FIXED ---
+        window.addEventListener('DOMContentLoaded', () => {
+            const mainPic = document.getElementById('mainProfilePic');
+            if(mainPic) mainPic.src = galleryImages[20];
+        });
+
         let currentPasscode = "";
         const correctPasscode = "1012";
 
@@ -707,9 +500,7 @@
             if (currentPasscode.length < 4) {
                 currentPasscode += num;
                 updatePasscodeDots();
-                if (currentPasscode.length === 4) {
-                    verifyPasscode();
-                }
+                if (currentPasscode.length === 4) verifyPasscode();
             }
         }
 
@@ -724,11 +515,8 @@
         function updatePasscodeDots() {
             for (let i = 0; i < 4; i++) {
                 const dot = document.getElementById(`dot${i}`);
-                if (i < currentPasscode.length) {
-                    dot.classList.add("dot-active");
-                } else {
-                    dot.classList.remove("dot-active");
-                }
+                if (i < currentPasscode.length) dot.classList.add("dot-active");
+                else dot.classList.remove("dot-active");
             }
         }
 
@@ -736,7 +524,6 @@
             if (currentPasscode === correctPasscode) {
                 triggerFullFlowerBurst();
                 playBeepSound(523.25);
-
                 setTimeout(() => {
                     document.getElementById("passcodeScreen").classList.add("hidden");
                     document.getElementById("mainMenuScreen").classList.remove("hidden");
@@ -745,10 +532,7 @@
             } else {
                 document.getElementById("passcodeError").innerText = "Mật khẩu chưa đúng! Bấm vào Hộp Quà 🎁 để xem gợi ý nhé Dunggg";
                 playBeepSound(200);
-                setTimeout(() => {
-                    currentPasscode = "";
-                    updatePasscodeDots();
-                }, 800);
+                setTimeout(() => { currentPasscode = ""; updatePasscodeDots(); }, 800);
             }
         }
 
@@ -756,40 +540,21 @@
             const overlay = document.getElementById("flowerOverlay");
             overlay.innerHTML = "";
             overlay.style.opacity = "1";
-
             const flowers = ['🌹', '🌸', '🌺', '🌻', '🌼', '🌷', '💐', '🌺', '🌹', '🌸'];
-            const total = 90;
-
-            for (let i = 0; i < total; i++) {
+            for (let i = 0; i < 90; i++) {
                 const flower = document.createElement("div");
                 flower.className = "flower-item";
                 flower.innerText = flowers[Math.floor(Math.random() * flowers.length)];
-                
                 const angle = Math.random() * Math.PI * 2;
                 const distance = 160 + Math.random() * 700;
-                const tx = Math.cos(angle) * distance;
-                const ty = Math.sin(angle) * distance;
-                const scale = 0.8 + Math.random() * 2.0;
-                const rot = Math.random() * 360;
-
-                flower.style.setProperty('--tx', `${tx}px`);
-                flower.style.setProperty('--ty', `${ty}px`);
-                flower.style.setProperty('--s', scale);
-                flower.style.setProperty('--r', `${rot}deg`);
-
+                flower.style.setProperty('--tx', `${Math.cos(angle) * distance}px`);
+                flower.style.setProperty('--ty', `${Math.sin(angle) * distance}px`);
+                flower.style.setProperty('--s', 0.8 + Math.random() * 2.0);
+                flower.style.setProperty('--r', `${Math.random() * 360}deg`);
                 overlay.appendChild(flower);
             }
-
-            confetti({
-                particleCount: 140,
-                spread: 110,
-                origin: { y: 0.5 }
-            });
-
-            setTimeout(() => {
-                overlay.style.opacity = "0";
-                setTimeout(() => { overlay.innerHTML = ""; }, 500);
-            }, 1200);
+            confetti({ particleCount: 140, spread: 110, origin: { y: 0.5 } });
+            setTimeout(() => { overlay.style.opacity = "0"; setTimeout(() => overlay.innerHTML = "", 500); }, 1200);
         }
 
         function lockApp() {
@@ -800,125 +565,72 @@
             document.getElementById("passcodeScreen").classList.remove("hidden");
         }
 
-        function toggleHintModal(show) {
-            document.getElementById("hintModal").classList.toggle("hidden", !show);
-        }
-
+        function toggleHintModal(show) { document.getElementById("hintModal").classList.toggle("hidden", !show); }
         function openModal(modalId) {
             document.getElementById(modalId).classList.remove("hidden");
             if (modalId === 'musicModal') renderTracklist();
             if (modalId === 'imageModal') renderGalleryGrid();
         }
+        function closeModal(modalId) { document.getElementById(modalId).classList.add("hidden"); }
 
-        function closeModal(modalId) {
-            document.getElementById(modalId).classList.add("hidden");
-        }
-
-        // --- 2. COUNTDOWN TIMER ---
         let countdownInterval = null;
         function startCountdownTimer() {
             const targetDate = new Date('2026-12-10T00:00:00').getTime();
             if (countdownInterval) clearInterval(countdownInterval);
-
             function updateTimer() {
-                const now = new Date().getTime();
-                const diff = targetDate - now;
-
-                if (diff <= 0) {
-                    document.getElementById("cdDays").innerText = "00";
-                    document.getElementById("cdHours").innerText = "00";
-                    document.getElementById("cdMins").innerText = "00";
-                    document.getElementById("cdSecs").innerText = "00";
-                    return;
-                }
-
-                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-                document.getElementById("cdDays").innerText = days < 10 ? '0' + days : days;
-                document.getElementById("cdHours").innerText = hours < 10 ? '0' + hours : hours;
-                document.getElementById("cdMins").innerText = minutes < 10 ? '0' + minutes : minutes;
-                document.getElementById("cdSecs").innerText = seconds < 10 ? '0' + seconds : seconds;
+                const diff = targetDate - new Date().getTime();
+                if (diff <= 0) return;
+                document.getElementById("cdDays").innerText = String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, '0');
+                document.getElementById("cdHours").innerText = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+                document.getElementById("cdMins").innerText = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+                document.getElementById("cdSecs").innerText = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
             }
-
             updateTimer();
             countdownInterval = setInterval(updateTimer, 1000);
         }
 
-        // --- 3. AUDIO SYNTHESIZER ---
-        let audioCtx = null;
-        let melodyInterval = null;
-        let isPlayingMusic = false;
-
-        function initAudioCtx() {
-            if (!audioCtx) {
-                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-            }
-        }
-
+        let audioCtx = null, melodyInterval = null, isPlayingMusic = false;
+        function initAudioCtx() { if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
         function playBeepSound(freq) {
             try {
                 initAudioCtx();
-                const osc = audioCtx.createOscillator();
-                const gain = audioCtx.createGain();
-                osc.type = 'sine';
-                osc.frequency.value = freq;
+                const osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
+                osc.type = 'sine'; osc.frequency.value = freq;
                 gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
                 gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.3);
-                osc.connect(gain);
-                gain.connect(audioCtx.destination);
-                osc.start();
-                osc.stop(audioCtx.currentTime + 0.3);
+                osc.connect(gain); gain.connect(audioCtx.destination);
+                osc.start(); osc.stop(audioCtx.currentTime + 0.3);
             } catch(e) {}
         }
 
-        const romanticMelodyNotes = [261.63, 329.63, 392.00, 523.25, 440.00, 349.23, 392.00, 329.63, 293.66, 349.23, 440.00, 392.00, 329.63, 261.63];
-        let noteIndex = 0;
-
+        const notes = [261.63, 329.63, 392.00, 523.25, 440.00, 349.23, 392.00, 329.63];
+        let noteIdx = 0, currentSongProgress = 0;
         function startSynthMelody() {
             initAudioCtx();
             if (audioCtx.state === 'suspended') audioCtx.resume();
             if (melodyInterval) clearInterval(melodyInterval);
-            
             melodyInterval = setInterval(() => {
-                const note = romanticMelodyNotes[noteIndex % romanticMelodyNotes.length];
-                playBeepSound(note);
-                noteIndex++;
+                playBeepSound(notes[noteIdx++ % notes.length]);
                 currentSongProgress = (currentSongProgress + 1) % 30;
-                updateProgressBarUI();
+                document.getElementById("songProgressBar").style.width = (currentSongProgress / 30) * 100 + "%";
+                document.getElementById("currentTime").innerText = `0:${currentSongProgress < 10 ? '0' : ''}${currentSongProgress}`;
             }, 600);
         }
-
-        function stopSynthMelody() {
-            if (melodyInterval) {
-                clearInterval(melodyInterval);
-                melodyInterval = null;
-            }
-        }
+        function stopSynthMelody() { if (melodyInterval) { clearInterval(melodyInterval); melodyInterval = null; } }
 
         function toggleMasterSound() {
+            isPlayingMusic = !isPlayingMusic;
             const icon = document.getElementById("soundMasterIcon");
-            if (isPlayingMusic) {
-                togglePlaySong();
-                icon.className = "fa-solid fa-volume-xmark";
-            } else {
-                togglePlaySong();
-                icon.className = "fa-solid fa-music animate-spin";
-            }
+            if (isPlayingMusic) { icon.className = "fa-solid fa-music animate-spin"; startSynthMelody(); }
+            else { icon.className = "fa-solid fa-volume-xmark"; stopSynthMelody(); }
         }
 
-        // --- 4. MUSIC PLAYER ---
         const playlist = [
-            { title: "MISSING YOU", artist: "Dương & Dung Melody", duration: "0:30", img: "image_42f5e9.jpg" },
-            { title: "Ai Ngoài Anh", artist: "Romantic Pop", duration: "0:30", img: "image_c0d5d0.jpg" },
-            { title: "Nơi Này Có Anh", artist: "Sweet Ballad", duration: "0:30", img: "image_fb5cab.jpg" },
-            { title: "Lỡ Say Bye Là Bye", artist: "Chill Love", duration: "0:30", img: "image_33bf0b.jpg" }
+            { title: "MISSING YOU", artist: "Dương & Dung Melody", duration: "0:30", img: galleryImages[20] },
+            { title: "Ai Ngoài Anh", artist: "Romantic Pop", duration: "0:30", img: galleryImages[27] },
+            { title: "Nơi Này Có Anh", artist: "Sweet Ballad", duration: "0:30", img: galleryImages[22] }
         ];
-
         let currentTrackIndex = 0;
-        let currentSongProgress = 0;
 
         function renderTracklist() {
             const container = document.getElementById("tracklistContainer");
@@ -927,26 +639,10 @@
                 const isActive = index === currentTrackIndex;
                 const div = document.createElement("div");
                 div.className = `flex items-center justify-between p-3 rounded-2xl cursor-pointer transition ${isActive ? 'bg-pink-200/90 border border-pink-400' : 'bg-white/80 hover:bg-white'}`;
-                div.onclick = () => selectTrack(index);
-                div.innerHTML = `
-                    <div class="flex items-center gap-3">
-                        <img src="${song.img}" class="w-10 h-10 rounded-xl object-cover">
-                        <div>
-                            <h6 class="font-bold text-xs ${isActive ? 'text-pink-700' : 'text-gray-700'}">${song.title}</h6>
-                            <p class="text-[10px] text-gray-500">${song.artist}</p>
-                        </div>
-                    </div>
-                    <span class="text-xs text-pink-500 font-semibold">${song.duration}</span>
-                `;
+                div.onclick = () => { currentTrackIndex = index; currentSongProgress = 0; updatePlayerUI(); if (!isPlayingMusic) togglePlaySong(); };
+                div.innerHTML = `<div class="flex items-center gap-3"><img src="${song.img}" class="w-10 h-10 rounded-xl object-cover"><div><h6 class="font-bold text-xs ${isActive ? 'text-pink-700' : 'text-gray-700'}">${song.title}</h6><p class="text-[10px] text-gray-500">${song.artist}</p></div></div><span class="text-xs text-pink-500 font-semibold">${song.duration}</span>`;
                 container.appendChild(div);
             });
-        }
-
-        function selectTrack(index) {
-            currentTrackIndex = index;
-            currentSongProgress = 0;
-            updatePlayerUI();
-            if (!isPlayingMusic) togglePlaySong();
         }
 
         function updatePlayerUI() {
@@ -960,162 +656,58 @@
 
         function togglePlaySong() {
             isPlayingMusic = !isPlayingMusic;
-            const icon = document.getElementById("playPauseIcon");
-            const vinyl = document.getElementById("vinylDisk");
-            const eq = document.getElementById("eqVisualizer");
-
-            if (isPlayingMusic) {
-                icon.className = "fa-solid fa-pause";
-                vinyl.classList.remove("paused");
-                eq.classList.remove("hidden");
-                startSynthMelody();
-            } else {
-                icon.className = "fa-solid fa-play";
-                vinyl.classList.add("paused");
-                eq.classList.add("hidden");
-                stopSynthMelody();
-            }
+            const icon = document.getElementById("playPauseIcon"), vinyl = document.getElementById("vinylDisk"), eq = document.getElementById("eqVisualizer");
+            if (isPlayingMusic) { icon.className = "fa-solid fa-pause"; vinyl.classList.remove("paused"); eq.classList.remove("hidden"); startSynthMelody(); }
+            else { icon.className = "fa-solid fa-play"; vinyl.classList.add("paused"); eq.classList.add("hidden"); stopSynthMelody(); }
         }
 
-        function updateProgressBarUI() {
-            const percent = (currentSongProgress / 30) * 100;
-            document.getElementById("songProgressBar").style.width = percent + "%";
-            document.getElementById("currentTime").innerText = `0:${currentSongProgress < 10 ? '0' : ''}${currentSongProgress}`;
-        }
-
+        function nextSong() { currentTrackIndex = (currentTrackIndex + 1) % playlist.length; currentSongProgress = 0; updatePlayerUI(); }
+        function prevSong() { currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length; currentSongProgress = 0; updatePlayerUI(); }
         function seekSong(event) {
             const rect = event.currentTarget.getBoundingClientRect();
-            const percent = (event.clientX - rect.left) / rect.width;
-            currentSongProgress = Math.floor(percent * 30);
-            updateProgressBarUI();
+            currentSongProgress = Math.floor(((event.clientX - rect.left) / rect.width) * 30);
+            document.getElementById("songProgressBar").style.width = (currentSongProgress / 30) * 100 + "%";
         }
 
-        function nextSong() {
-            currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
-            currentSongProgress = 0;
-            updatePlayerUI();
-        }
-
-        function prevSong() {
-            currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
-            currentSongProgress = 0;
-            updatePlayerUI();
-        }
-
-        // --- 5. GALLERY GRID RENDERER ---
         function renderGalleryGrid() {
             const container = document.getElementById("galleryGridContainer");
             container.innerHTML = "";
             galleryImages.forEach((imgSrc, index) => {
                 const div = document.createElement("div");
                 div.className = "aspect-square rounded-xl overflow-hidden shadow cursor-pointer hover:opacity-90 transition transform hover:scale-105 border-2 border-white";
-                div.onclick = () => openLightbox(index);
+                div.onclick = () => { document.getElementById("lightboxImg").src = imgSrc; document.getElementById("lightboxModal").classList.remove("hidden"); };
                 div.innerHTML = `<img src="${imgSrc}" class="w-full h-full object-cover">`;
                 container.appendChild(div);
             });
         }
+        function closeLightbox() { document.getElementById("lightboxModal").classList.add("hidden"); }
 
-        let currentLightboxIndex = 0;
-        function openLightbox(index) {
-            currentLightboxIndex = index;
-            document.getElementById("lightboxImg").src = galleryImages[index];
-            document.getElementById("lightboxModal").classList.remove("hidden");
-        }
-
-        function closeLightbox() {
-            document.getElementById("lightboxModal").classList.add("hidden");
-        }
-
-        function nextLightboxImage() {
-            currentLightboxIndex = (currentLightboxIndex + 1) % galleryImages.length;
-            document.getElementById("lightboxImg").src = galleryImages[currentLightboxIndex];
-        }
-
-        function prevLightboxImage() {
-            currentLightboxIndex = (currentLightboxIndex - 1 + galleryImages.length) % galleryImages.length;
-            document.getElementById("lightboxImg").src = galleryImages[currentLightboxIndex];
-        }
-
-        // --- 6. INTERACTIVE 3D CAKE ---
-        let cakeAngleY = 0;
-        let isCakeAutoSpin = true;
-        let cakeSpinTimer = null;
-        let isDraggingCake = false;
-        let startX = 0;
-
+        let cakeAngleY = 0, isCakeAutoSpin = true, isDraggingCake = false, startX = 0;
         function init3DCake() {
-            const topTier = document.getElementById("topTier");
-            const bottomTier = document.getElementById("bottomTier");
-
-            const topCount = 8;
-            const topRadius = 70;
-            for (let i = 0; i < topCount; i++) {
-                const angle = (i / topCount) * 360;
+            const topTier = document.getElementById("topTier"), bottomTier = document.getElementById("bottomTier");
+            for (let i = 0; i < 8; i++) {
                 const slice = document.createElement("div");
                 slice.className = "cake-slice";
-                slice.style.transform = `rotateY(${angle}deg) translateZ(${topRadius}px)`;
+                slice.style.transform = `rotateY(${(i / 8) * 360}deg) translateZ(70px)`;
                 slice.innerHTML = `<img src="${galleryImages[i % galleryImages.length]}">`;
                 topTier.appendChild(slice);
             }
-
-            const bottomCount = 12;
-            const bottomRadius = 100;
-            for (let i = 0; i < bottomCount; i++) {
-                const angle = (i / bottomCount) * 360;
+            for (let i = 0; i < 12; i++) {
                 const slice = document.createElement("div");
                 slice.className = "cake-slice";
-                slice.style.transform = `rotateY(${angle}deg) translateZ(${bottomRadius}px)`;
+                slice.style.transform = `rotateY(${(i / 12) * 360}deg) translateZ(100px)`;
                 slice.innerHTML = `<img src="${galleryImages[(i + 2) % galleryImages.length]}">`;
                 bottomTier.appendChild(slice);
             }
-
             const stage = document.getElementById("cakeStage");
             stage.addEventListener("mousedown", (e) => { isDraggingCake = true; startX = e.clientX; });
-            window.addEventListener("mousemove", (e) => {
-                if (!isDraggingCake) return;
-                cakeAngleY += (e.clientX - startX) * 0.8;
-                startX = e.clientX;
-                applyCakeRotation();
-            });
+            window.addEventListener("mousemove", (e) => { if (!isDraggingCake) return; cakeAngleY += (e.clientX - startX) * 0.8; startX = e.clientX; document.getElementById("cake3dContainer").style.transform = `rotateY(${cakeAngleY}deg)`; });
             window.addEventListener("mouseup", () => { isDraggingCake = false; });
-
-            stage.addEventListener("touchstart", (e) => { isDraggingCake = true; startX = e.touches[0].clientX; });
-            window.addEventListener("touchmove", (e) => {
-                if (!isDraggingCake) return;
-                cakeAngleY += (e.touches[0].clientX - startX) * 0.8;
-                startX = e.touches[0].clientX;
-                applyCakeRotation();
-            });
-            window.addEventListener("touchend", () => { isDraggingCake = false; });
-
-            startCakeAutoSpin();
+            setInterval(() => { if (isCakeAutoSpin && !isDraggingCake) { cakeAngleY += 1.2; document.getElementById("cake3dContainer").style.transform = `rotateY(${cakeAngleY}deg)`; } }, 30);
         }
-
-        function applyCakeRotation() {
-            document.getElementById("cake3dContainer").style.transform = `rotateY(${cakeAngleY}deg)`;
-        }
-
-        function rotateCakeManual(delta) {
-            cakeAngleY += delta;
-            applyCakeRotation();
-        }
-
-        function startCakeAutoSpin() {
-            if (cakeSpinTimer) clearInterval(cakeSpinTimer);
-            cakeSpinTimer = setInterval(() => {
-                if (isCakeAutoSpin && !isDraggingCake) {
-                    cakeAngleY += 1.2;
-                    applyCakeRotation();
-                }
-            }, 30);
-        }
-
-        function toggleCakeAutoSpin() {
-            isCakeAutoSpin = !isCakeAutoSpin;
-            const btn = document.getElementById("cakeAutoSpinBtn");
-            btn.innerText = isCakeAutoSpin ? "Tự Động Xoay" : "Tạm Dừng";
-        }
-
+        function rotateCakeManual(delta) { cakeAngleY += delta; document.getElementById("cake3dContainer").style.transform = `rotateY(${cakeAngleY}deg)`; }
+        function toggleCakeAutoSpin() { isCakeAutoSpin = !isCakeAutoSpin; document.getElementById("cakeAutoSpinBtn").innerText = isCakeAutoSpin ? "Tự Động Xoay" : "Tạm Dừng"; }
+        
         let candlesBlown = false;
         function blowCandles() {
             if (candlesBlown) return;
@@ -1129,38 +721,16 @@
             confetti({ particleCount: 160, spread: 120, origin: { y: 0.55 } });
         }
 
-        // --- 7. BACKGROUND PETALS & SPARKLES ---
         function createFloatingParticles() {
             const container = document.getElementById("particlesLayer");
             const icons = ['🌸', '❤️', '🌹', '✨', '💕', '🌷'];
-
-            for (let i = 0; i < 25; i++) {
+            for (let i = 0; i < 20; i++) {
                 const p = document.createElement("div");
                 p.className = "sparkle";
-                p.style.width = (4 + Math.random() * 8) + "px";
-                p.style.height = p.style.width;
-                p.style.left = Math.random() * 100 + "vw";
-                p.style.top = Math.random() * 100 + "vh";
-                p.style.animationDuration = (2 + Math.random() * 4) + "s";
+                p.style.width = (4 + Math.random() * 8) + "px"; p.style.height = p.style.width;
+                p.style.left = Math.random() * 100 + "vw"; p.style.top = Math.random() * 100 + "vh";
                 container.appendChild(p);
             }
-
-            setInterval(() => {
-                const particle = document.createElement("div");
-                particle.innerText = icons[Math.floor(Math.random() * icons.length)];
-                particle.className = "fixed pointer-events-none text-base sm:text-xl opacity-70 z-0 transition-all duration-1000";
-                particle.style.left = (Math.random() * window.innerWidth) + "px";
-                particle.style.bottom = "-30px";
-                container.appendChild(particle);
-
-                const duration = 5000 + Math.random() * 4000;
-                particle.animate([
-                    { transform: `translate(0, 0) rotate(0deg)`, opacity: 0.8 },
-                    { transform: `translate(${(Math.random() - 0.5) * 160}px, -${window.innerHeight + 50}px) rotate(360deg)`, opacity: 0 }
-                ], { duration: duration, easing: 'ease-out' });
-
-                setTimeout(() => particle.remove(), duration);
-            }, 500);
         }
 
         window.onload = function() {
@@ -1170,133 +740,66 @@
             initCursorTree();
         };
 
-        // --- 8. CURSOR LOVE TREE ---
-        let treeCanvas, treeCtx;
-        let lastX = null, lastY = null;
-        const lovePhrases = ["Dương yêu Dung ❤️", "Dung công chúa của Dương 👑", "Yêu em bé Dung nhất đời ✨", "Mong Dung luôn hạnh phúc 🌸", "Mãi yêu Em Bé Dung 💖", "Dunggg xinh đẹp nhất 🌷", "Dương thương Dung lắm 🥰"];
+        // Tree canvas & Starry background
+        let treeCanvas, treeCtx, lastX = null, lastY = null, moveDistanceCounter = 0;
+        const lovePhrases = ["Dương yêu Dung ❤️", "Dung công chúa của Dương 👑", "Yêu em bé Dung nhất đời ✨", "Mong Dung luôn hạnh phúc 🌸", "Mãi yêu Em Bé Dung 💖"];
         let phraseIdx = 0;
-        let moveDistanceCounter = 0;
 
         function initCursorTree() {
             treeCanvas = document.getElementById("treeCanvas");
             if (!treeCanvas) return;
             treeCtx = treeCanvas.getContext("2d");
-
-            function resizeTree() {
-                treeCanvas.width = window.innerWidth;
-                treeCanvas.height = window.innerHeight;
-                clearTreeCanvas();
-            }
-            window.addEventListener("resize", resizeTree);
-            resizeTree();
-
+            function resize() { treeCanvas.width = window.innerWidth; treeCanvas.height = window.innerHeight; clearTreeCanvas(); }
+            window.addEventListener("resize", resize);
+            resize();
             treeCanvas.addEventListener("mousemove", handlePointerMove);
             treeCanvas.addEventListener("touchmove", (e) => { if (e.touches.length > 0) handlePointerMove(e.touches[0]); });
             treeCanvas.addEventListener("mouseleave", () => { lastX = null; lastY = null; });
-            treeCanvas.addEventListener("touchend", () => { lastX = null; lastY = null; });
         }
-
-        function clearTreeCanvas() {
-            if (!treeCtx) return;
-            treeCtx.fillStyle = "rgba(15, 23, 42, 1)";
-            treeCtx.fillRect(0, 0, treeCanvas.width, treeCanvas.height);
-            document.getElementById("loveTextContainer").innerHTML = "";
-            lastX = null; lastY = null;
-        }
-
+        function clearTreeCanvas() { if (!treeCtx) return; treeCtx.fillStyle = "#0f172a"; treeCtx.fillRect(0, 0, treeCanvas.width, treeCanvas.height); document.getElementById("loveTextContainer").innerHTML = ""; lastX = null; lastY = null; }
         function handlePointerMove(e) {
-            const x = e.clientX;
-            const y = e.clientY;
+            const x = e.clientX, y = e.clientY;
             if (lastX === null || lastY === null) { lastX = x; lastY = y; return; }
-
             const dist = Math.sqrt((x - lastX) ** 2 + (y - lastY) ** 2);
             if (dist > 8) {
-                drawBranch(lastX, lastY, x, y, Math.min(20, Math.max(3, 22 - dist * 0.3)));
-                if (Math.random() < 0.65) spawnBlossoms(x, y);
-
+                treeCtx.beginPath(); treeCtx.moveTo(lastX, lastY); treeCtx.lineTo(x, y);
+                treeCtx.lineWidth = Math.min(20, Math.max(3, 22 - dist * 0.3));
+                treeCtx.strokeStyle = "#1a0f07"; treeCtx.lineCap = "round"; treeCtx.stroke();
+                if (Math.random() < 0.65) {
+                    treeCtx.beginPath(); treeCtx.arc(x + (Math.random() - 0.5) * 16, y + (Math.random() - 0.5) * 16, 6, 0, Math.PI * 2);
+                    treeCtx.fillStyle = '#f43f5e'; treeCtx.fill();
+                }
                 moveDistanceCounter += dist;
                 if (moveDistanceCounter > 130) {
-                    spawnLoveText(x, y);
+                    const c = document.getElementById("loveTextContainer");
+                    const t = document.createElement("div");
+                    t.className = "love-text-pop text-sm sm:text-base";
+                    t.innerText = lovePhrases[phraseIdx++ % lovePhrases.length];
+                    t.style.left = x + "px"; t.style.top = (y - 20) + "px";
+                    c.appendChild(t); setTimeout(() => t.remove(), 2200);
                     moveDistanceCounter = 0;
                 }
                 lastX = x; lastY = y;
             }
         }
-
-        function drawBranch(x1, y1, x2, y2, thickness) {
-            treeCtx.save();
-            treeCtx.beginPath();
-            treeCtx.moveTo(x1, y1);
-            treeCtx.lineTo(x2, y2);
-            treeCtx.lineWidth = thickness;
-            treeCtx.strokeStyle = "#1a0f07";
-            treeCtx.lineCap = "round";
-            treeCtx.stroke();
-            treeCtx.restore();
-        }
-
-        function spawnBlossoms(x, y) {
-            const colors = ['#f43f5e', '#fb7185', '#fda4af', '#f97316', '#ff4d6d'];
-            treeCtx.save();
-            treeCtx.translate(x + (Math.random() - 0.5) * 16, y + (Math.random() - 0.5) * 16);
-            treeCtx.beginPath();
-            treeCtx.arc(0, 0, 8, 0, Math.PI * 2);
-            treeCtx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
-            treeCtx.fill();
-            treeCtx.restore();
-        }
-
-        function spawnLoveText(x, y) {
-            const container = document.getElementById("loveTextContainer");
-            if (!container) return;
-            const textEl = document.createElement("div");
-            textEl.className = "love-text-pop text-sm sm:text-base md:text-lg";
-            textEl.innerText = lovePhrases[phraseIdx % lovePhrases.length];
-            phraseIdx++;
-            textEl.style.left = (x + (Math.random() - 0.5) * 30) + "px";
-            textEl.style.top = (y - 20) + "px";
-            container.appendChild(textEl);
-            setTimeout(() => textEl.remove(), 2200);
-        }
-
         function openCursorTreeModal() { document.getElementById("cursorTreeModal").classList.remove("hidden"); clearTreeCanvas(); }
         function closeCursorTreeModal() { document.getElementById("cursorTreeModal").classList.add("hidden"); }
 
-        // --- 9. STARRY NIGHT SECRET GIFT ---
-        let starryCanvas, starryCtx, stars = [];
         function initStarrySkyCanvas() {
-            starryCanvas = document.getElementById("starrySkyCanvas");
-            if (!starryCanvas) return;
-            starryCtx = starryCanvas.getContext("2d");
-
-            function resizeStarry() {
-                starryCanvas.width = window.innerWidth;
-                starryCanvas.height = window.innerHeight;
-                stars = [];
-                for (let i = 0; i < 120; i++) {
-                    stars.push({ x: Math.random() * starryCanvas.width, y: Math.random() * starryCanvas.height, radius: Math.random() * 1.8 + 0.5, alpha: Math.random(), speed: Math.random() * 0.02 + 0.005 });
-                }
+            const canvas = document.getElementById("starrySkyCanvas");
+            if (!canvas) return;
+            const ctx = canvas.getContext("2d");
+            function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+            window.addEventListener("resize", resize); resize();
+            let stars = Array.from({length: 100}, () => ({ x: Math.random() * canvas.width, y: Math.random() * canvas.height, r: Math.random() * 1.5 + 0.5, a: Math.random() }));
+            function loop() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = "#ffffff";
+                stars.forEach(s => { s.a += 0.01; ctx.globalAlpha = Math.abs(Math.sin(s.a)); ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2); ctx.fill(); });
+                requestAnimationFrame(loop);
             }
-            window.addEventListener("resize", resizeStarry);
-            resizeStarry();
-            animateStarrySky();
+            loop();
         }
-
-        function animateStarrySky() {
-            if (!starryCtx) return;
-            starryCtx.clearRect(0, 0, starryCanvas.width, starryCanvas.height);
-            starryCtx.fillStyle = "#ffffff";
-            stars.forEach(star => {
-                star.alpha += star.speed;
-                if (star.alpha > 1 || star.alpha < 0.2) star.speed = -star.speed;
-                starryCtx.globalAlpha = star.alpha;
-                starryCtx.beginPath();
-                starryCtx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-                starryCtx.fill();
-            });
-            requestAnimationFrame(animateStarrySky);
-        }
-
         function openSecretStarGift() {
             document.getElementById("secretGiftModal").classList.remove("hidden");
             document.getElementById("initialGiftBoxStage").classList.remove("hidden");
@@ -1305,22 +808,17 @@
             document.getElementById("line1Msg").style.opacity = "0";
             document.getElementById("line2Msg").style.opacity = "0";
             document.getElementById("line3Msg").style.opacity = "0";
-            document.getElementById("scrollHint").style.opacity = "0";
         }
-
         function closeSecretStarGift() { document.getElementById("secretGiftModal").classList.add("hidden"); }
-
         function openSecretGiftBox() {
             document.getElementById("initialGiftBoxStage").classList.add("hidden");
             document.getElementById("starryMessageContainer").classList.remove("hidden");
             playBeepSound(587.33);
             confetti({ particleCount: 150, spread: 100, origin: { y: 0.6 } });
-
             setTimeout(() => { document.getElementById("line1Msg").style.opacity = "1"; }, 400);
             setTimeout(() => { document.getElementById("line2Msg").style.opacity = "1"; }, 1800);
             setTimeout(() => {
                 document.getElementById("line3Msg").style.opacity = "1";
-                document.getElementById("scrollHint").style.opacity = "1";
                 document.getElementById("shootingCat").classList.remove("hidden");
             }, 3200);
         }
